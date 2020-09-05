@@ -1,0 +1,30 @@
+version: "3.8"
+
+services:
+  jenkins:
+    image: jenkinsci/blueocean:latest
+    restart: always
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/local/bin/docker:/usr/local/bin/docker
+
+  gitlab:
+    image: gitlab/gitlab-ce:latest
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+      - "2222:22"
+
+  nexus:
+    image: sonatype/nexus3:latest
+    restart: always
+    ports:
+      - 8081:8081
+    volumes:
+      - ./nexus-data:/nexus-data
