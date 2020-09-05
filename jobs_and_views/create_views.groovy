@@ -2,6 +2,7 @@ buildMonitorView('Wall') {
     jobs {
         regex('.*')
     }
+    recurse(true)
 }
 
 listView('List') {
