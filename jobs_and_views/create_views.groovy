@@ -9,10 +9,8 @@ listView('List') {
     description('All jobs')
     filterBuildQueue()
     filterExecutors()
-    jobFilters {
-        regex {
-            regex('.*')
-        }
+    jobs {
+        regex('.*')
     }
     columns {
         status()
