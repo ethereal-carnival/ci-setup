@@ -14,9 +14,3 @@ job("Sleep") {
         shell("sleep 2m")
     }
 }
-
-job("Sleep2") {
-    steps {
-        shell("sleep 2m")
-    }
-}
