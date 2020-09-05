@@ -11,7 +11,7 @@ multibranchPipelineJob('Test Pipeline') {
             }
         }
         triggers {
-            cron('*/2 * * * *')
+            periodic(5)
         }
     }
 }
@@ -29,7 +29,7 @@ multibranchPipelineJob('Hello Maven') {
             }
         }
         triggers {
-            cron('*/2 * * * *')
+            periodic(5)
         }
     }
 }
