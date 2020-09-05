@@ -10,7 +10,9 @@ listView('List') {
     filterBuildQueue()
     filterExecutors()
     jobFilters {
-        all()
+        regex {
+            regex('.*')
+        }
     }
     columns {
         status()
