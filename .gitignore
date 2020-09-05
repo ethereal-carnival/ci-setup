@@ -1,2 +1,9 @@
 /.idea/
 /CI Setup.iml
+/.project
+/.classpath
+/.vscode/
+/.settings/
+/infrastructure/jenkins_home/
+/infrastructure/nexus-data/
+/infrastructure/portainer_data/
