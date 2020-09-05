@@ -7,3 +7,9 @@ multibranchPipelineJob('Test Pipeline') {
 		}
 	}
 }
+
+job("Sleep") {
+	steps {
+		shell("sleep 2m")
+	}
+}
