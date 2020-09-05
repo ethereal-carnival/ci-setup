@@ -1,0 +1,5 @@
+buildMonitorView('Wall') {
+    jobs {
+        regex('.*')
+    }
+}

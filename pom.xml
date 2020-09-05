@@ -9,8 +9,8 @@
   <version>1.0.0-SNAPSHOT</version>
 
   <build>
-    <sourceDirectory>src/main/groovy</sourceDirectory>
-    <testSourceDirectory>src/test</testSourceDirectory>
+    <sourceDirectory>jobs_and_views</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
