@@ -2,7 +2,6 @@ buildMonitorView('Wall') {
     jobs {
         regex('.*')
     }
-    recurse(true)
 }
 
 listView('List') {
@@ -12,6 +11,7 @@ listView('List') {
     jobs {
         regex('.*')
     }
+    recurse(true)
     columns {
         status()
         weather()
