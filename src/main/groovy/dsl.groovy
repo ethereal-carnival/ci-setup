@@ -1,19 +1,3 @@
-pipelineJob("develop") {
-	keepDependencies(false)
-	definition {
-		cpsScm {
-			scriptPath("Jenkinsfile")
-		}
-	}
-	disabled(false)
-}
+multibranchPipelineJob("tester") {
 
-pipelineJob("prod") {
-	keepDependencies(false)
-	definition {
-		cpsScm {
-			scriptPath("Jenkinsfile")
-		}
-	}
-	disabled(false)
 }
